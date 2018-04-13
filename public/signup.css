@@ -4,25 +4,34 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #ebf2fa;
+}
+
+.text-center {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  margin: auto;
 }
 
 .form-control {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .form-control.formInputs {
@@ -34,13 +43,11 @@ body {
 }
 
 .form-control input[type="email"] {
-  margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .form-control input[type="password"] {
-  margin-bottom: 10px;
   border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -53,6 +60,11 @@ body {
   margin-top: 15px;
 }
 
-#sign {
-  margin-top: 75px;
+.heading {
+  max-width: 34rem;
+}
+
+.incorrect {
+  float: bottom;
+  color: red;
 }

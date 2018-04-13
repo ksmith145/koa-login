@@ -4,18 +4,25 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  /*background-color: #ebf2fa;*/
+}
+.text-center {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  margin: auto;
 }
 
 .form-control {
@@ -23,6 +30,7 @@ body {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .form-control.formInputs {
@@ -49,6 +57,12 @@ body {
   margin-top: 15px;
 }
 
-#sign {
+.bottom {
   margin-top: 75px;
+}
+
+.incorrect {
+  color: red;
+  float: bottom;
+  margin-top: 5px;
 }
